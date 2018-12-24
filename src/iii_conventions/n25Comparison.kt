@@ -28,11 +28,6 @@ operator fun MyDate.compareTo(other: MyDate) : Int {
 }
 */
 
-operator fun MyDate.compareTo(other: MyDate): Int = when {
-    year != other.year -> year - other.year
-    month != other.month -> month - other.month
-    else -> dayOfMonth - other.dayOfMonth
-}
 
 
 
